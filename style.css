@@ -1,0 +1,40 @@
+/* textarea{
+    height: 30%;
+    width: 50%;
+} */
+body{
+    background-color: snow;
+}
+.content{
+    display: flex;
+    justify-content: center;
+
+}
+#input{
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    text-align: center;
+}
+#microPhoen{
+    align-self: center;
+    margin-bottom: 1px;
+    margin-right: 2px;
+}
+
+#stopMic{
+    align-self: center;
+    margin-bottom: 1px;
+}
+#clear{
+    align-self: center;
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+#mez{
+    margin-right: 2px;
+    /* background-color: tomato; */
+}
