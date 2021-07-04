@@ -1,0 +1,33 @@
+
+
+body{
+    background-color: snow;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: center;
+    
+    /* margin-top: 15%; */
+}
+
+input{
+    height: 35px;
+    width: 400px;
+    /* justify-content: center; */
+} 
+.head{
+    text-align: center;
+    margin-top: 15%;
+}
+
+#normalSerach{
+    height: 39px;
+    width: 45px;
+    margin-right: 1px;
+}
+ #search{
+    height: 39px;
+    width: 45px;
+    margin-left: 1px;
+} 
