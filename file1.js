@@ -1,16 +1,10 @@
 
-
-
-
 let microPhoen=document.querySelector("#microPhoen");
 let stopMic=document.querySelector("#stopMic");
 let message=document.querySelector("#mez");
 let textBox=document.querySelector("#textBox");
 let clear=document.querySelector("#clear");
 let recognition = new webkitSpeechRecognition();
-
-//speechRecognitionList.addFromString(grammar, 1);
-//recognition.grammars = speechRecognitionList;
 recognition.continuous = true;
 recognition.lang = 'en-US';
 recognition.interimResults = false;
@@ -23,14 +17,6 @@ if(shows==false)
 {
     message.innerHTML="click on"
 }
-//  recognition.onstart=function(){
-
-//   message.innerHTML="microphoen started"   ; 
-// }
-//  recognition.onspeechend=function(){
-//       message.innerHTML="Speak again";
-//       //shows=false
-//   }
 
 recognition.onresult=function(){
 
@@ -38,6 +24,7 @@ let data= event.resultIndex;
 let transcript=event.results[data][0].transcript
 content=content+transcript
 textBox.innerHTML=content
+console.log(content);
 
 }
 
@@ -55,11 +42,17 @@ stopMic.addEventListener("click",function(e){
     message.innerHTML="stoped microphoen"
 })
 
-
-
-
 clear.addEventListener("click",function(e){
     textBox.innerHTML="";
 })
 
+let okShivam=document.querySelector("#okShivam");
 
+okShivam.addEventListener("click",function(){
+    window.location.href="voiceSearch.html"
+})
+
+
+function googleTranslateElementInit() {   
+    new google.translate.TranslateElement({pageLanguage: 'english'}, 'traslateLang');
+  }
