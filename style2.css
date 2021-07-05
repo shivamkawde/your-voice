@@ -7,14 +7,14 @@ body{
 .maindiv{
     display: flex;
     justify-content: center;
-    
-    /* margin-top: 15%; */
+       
+
 }
 
 input{
     height: 35px;
     width: 400px;
-    /* justify-content: center; */
+    
 } 
 .head{
     text-align: center;
@@ -31,3 +31,11 @@ input{
     width: 45px;
     margin-left: 1px;
 } 
+
+
+@media only screen and (max-width: 530px) {
+    input{
+        height: 35px;
+        width: 200px;
+    }
+  }
