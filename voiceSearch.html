@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <a href="index.html"><h3>Home</h3></a>
-    <div class="head">
-        <h1>your Voice</h1>
+  <div class="container">
+    <h1>your Voice</h1>
+    <div id="input">
+      <p id="mez">click on button</p>
+      <button id="microPhoen"><i class="fa fa-microphone" style="font-size:48px;color:red"></i></button>
+      <button id="stopMic"><i class="fa fa-microphone-slash" style="font-size:48px;color:red"></i></button>
+      <button id="clear"><i class="fa fa-close" style="font-size:48px;color:red"></i></button>
+      <button id="okShivam"><i class="fa fa-search" style="font-size:45px;color:red"></i></button>
+      <button id="sound"><i class="fa fa-volume-up" style="font-size:48px;color:red"></i> </button>
     </div>
-    
-   <div class="maindiv">
-       
-      <form action="https://www.google.com/search" id="form" method="get">
-      <input type="text" name="q"  autocomplete="off" autofocus>
-      <button id="normalSerach"><i class="fa fa-search" style="font-size: 20px; color: red;"></i></button>
-       
-    </form>
-    <button id="search"><i class="fa fa-microphone" style="font-size:20px;color:red"></i></button>
-   </div>
+
+    <div>
+    <div class="content">
+      
+        <textarea class="translate" name="" id="textBox" cols="150" rows="30"></textarea>
+      </div>
+      
+    </div>
 
 
-   <script src="voiceSearch.js"></script>
-    <script src="file1.js"></script> 
-    
+  </div>
+  
+    <script src="file1.js"></script>
+    <script src="voiceSearch.js"></script>
+    <script src="voiceReader.js"></script>
+  
 </body>
 </html>
