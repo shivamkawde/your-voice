@@ -56,7 +56,7 @@ clear.addEventListener("click", function (e) {
 let okShivam = document.querySelector("#okShivam");
 
 okShivam.addEventListener("click", function () {
-    window.location.href = "index.html"
+    window.location.href = "index.html";
 })
 
 
