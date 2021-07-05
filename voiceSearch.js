@@ -32,6 +32,6 @@ recognitio.onresult=function(){
   //   form.submit()
   // },5000)
    
-  console.log(gooledata)
+  
     }
  
